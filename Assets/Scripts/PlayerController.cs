@@ -5,6 +5,9 @@ using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerController : MonoBehaviour
 {
+
+    //todo Workout why slow on first play through
+
     [Header("General")]
     [Tooltip("In ms^-1")][SerializeField] float xSpeed = 4f; //metres per second
     [Tooltip("In ms^-1")][SerializeField] float ySpeed = 4f; //metres per second
