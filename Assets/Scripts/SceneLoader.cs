@@ -3,14 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MusicPlayer : MonoBehaviour
+public class SceneLoader : MonoBehaviour
 {
-    void Awake ()
-    {
-        DontDestroyOnLoad(gameObject);
-    }
-
-
     void Start()
     {
         Invoke("LoadLevel", 10f);
@@ -19,13 +13,12 @@ public class MusicPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    private void LoadLevel() 
+    private void LoadLevel()
     {
         SceneManager.LoadScene(1);
-    
-    }
 
+    }
 }
