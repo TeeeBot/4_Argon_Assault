@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c16ef35a8f7224882adae974f373199c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadDelay: 1
+  levelLoadDelay: 1
   deathFX: {fileID: 9104820025959749939}
 --- !u!1001 &724024055024712032
 PrefabInstance:
@@ -264,7 +264,7 @@ PrefabInstance:
     - target: {fileID: 1344355655017141085, guid: d2714036835d74cdba4d7d24d13311ac,
         type: 3}
       propertyPath: m_Name
-      value: Bullets (1)
+      value: Bullets RHS
       objectReference: {fileID: 0}
     - target: {fileID: 1344355655017141086, guid: d2714036835d74cdba4d7d24d13311ac,
         type: 3}
@@ -339,7 +339,7 @@ PrefabInstance:
     - target: {fileID: 1344355655017141085, guid: d2714036835d74cdba4d7d24d13311ac,
         type: 3}
       propertyPath: m_Name
-      value: Bullets
+      value: Bullets LHS
       objectReference: {fileID: 0}
     - target: {fileID: 1344355655017141086, guid: d2714036835d74cdba4d7d24d13311ac,
         type: 3}
