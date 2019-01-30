@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
@@ -15,6 +16,8 @@ public class PlayerController : MonoBehaviour
     [Tooltip("In Metres")][SerializeField] float xRange = 3f;
     [Tooltip("In Metres")] [SerializeField] float yMin = 3f;
     [Tooltip("In Metres")] [SerializeField] float yMax = 3f;
+
+    [SerializeField] GameObject[] guns = new GameObject[2];
 
     [Header("Screen-position Based")]
     [SerializeField] float positionPitchFactor = -5f;
@@ -33,6 +36,7 @@ public class PlayerController : MonoBehaviour
         {
             ProcessPlayerTranslation();
             ProcessPlayerRotation();
+            ProcessFiring();
         }
     }
 
@@ -68,6 +72,37 @@ public class PlayerController : MonoBehaviour
 
         transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
     }
+
+    private void ProcessFiring()
+    {
+        if (CrossPlatformInputManager.GetButton("Fire"))
+        {
+            ActivateGuns();
+        }
+
+        if (CrossPlatformInputManager.GetButtonUp("Fire"))
+        {
+            DeactivateGuns();
+        }
+    }
+
+    private void ActivateGuns()
+    {
+        foreach (GameObject gun in guns)
+        {
+            gun.SetActive(true);
+        }
+    }
+
+    private void DeactivateGuns()
+    {
+        foreach (GameObject gun in guns)
+        {
+            gun.SetActive(false);
+        }
+    }
+
+
 
     private void OnPlayerDeath() // called by string reference
     {

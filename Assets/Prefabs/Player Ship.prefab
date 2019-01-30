@@ -130,6 +130,9 @@ MonoBehaviour:
   xRange: 5.5
   yMin: 4
   yMax: 4
+  guns:
+  - {fileID: 5343855592314196130}
+  - {fileID: 6377426930940919639}
   positionPitchFactor: -8
   positionYawFactor: 7.8
   controlPitchFactor: -20
@@ -264,7 +267,12 @@ PrefabInstance:
     - target: {fileID: 1344355655017141085, guid: d2714036835d74cdba4d7d24d13311ac,
         type: 3}
       propertyPath: m_Name
-      value: Bullets RHS
+      value: Gun RHS
+      objectReference: {fileID: 0}
+    - target: {fileID: 1344355655017141085, guid: d2714036835d74cdba4d7d24d13311ac,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1344355655017141086, guid: d2714036835d74cdba4d7d24d13311ac,
         type: 3}
@@ -321,8 +329,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1344355655017141152, guid: d2714036835d74cdba4d7d24d13311ac,
+        type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1344355655017141152, guid: d2714036835d74cdba4d7d24d13311ac,
+        type: 3}
+      propertyPath: CollisionModule.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1344355655017141152, guid: d2714036835d74cdba4d7d24d13311ac,
+        type: 3}
+      propertyPath: CollisionModule.collisionMessages
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2714036835d74cdba4d7d24d13311ac, type: 3}
+--- !u!1 &6377426930940919639 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1344355655017141085, guid: d2714036835d74cdba4d7d24d13311ac,
+    type: 3}
+  m_PrefabInstance: {fileID: 5343855593183226890}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6377426930940919636 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1344355655017141086, guid: d2714036835d74cdba4d7d24d13311ac,
@@ -339,7 +368,12 @@ PrefabInstance:
     - target: {fileID: 1344355655017141085, guid: d2714036835d74cdba4d7d24d13311ac,
         type: 3}
       propertyPath: m_Name
-      value: Bullets LHS
+      value: Gun LHS
+      objectReference: {fileID: 0}
+    - target: {fileID: 1344355655017141085, guid: d2714036835d74cdba4d7d24d13311ac,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1344355655017141086, guid: d2714036835d74cdba4d7d24d13311ac,
         type: 3}
@@ -396,8 +430,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1344355655017141152, guid: d2714036835d74cdba4d7d24d13311ac,
+        type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1344355655017141152, guid: d2714036835d74cdba4d7d24d13311ac,
+        type: 3}
+      propertyPath: CollisionModule.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1344355655017141152, guid: d2714036835d74cdba4d7d24d13311ac,
+        type: 3}
+      propertyPath: CollisionModule.collisionMessages
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2714036835d74cdba4d7d24d13311ac, type: 3}
+--- !u!1 &5343855592314196130 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1344355655017141085, guid: d2714036835d74cdba4d7d24d13311ac,
+    type: 3}
+  m_PrefabInstance: {fileID: 6377426931545719807}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5343855592314196129 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1344355655017141086, guid: d2714036835d74cdba4d7d24d13311ac,

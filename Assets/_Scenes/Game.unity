@@ -1300,6 +1300,10 @@ PrefabInstance:
       propertyPath: pointsForDestroying
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 1146247942, guid: 6d7afa73fcb1fce4cb4b65361a29bcbd, type: 3}
+      propertyPath: pointsPerHit
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d7afa73fcb1fce4cb4b65361a29bcbd, type: 3}
 --- !u!1001 &3482157072016038284
@@ -1437,41 +1441,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9104820025959749939, guid: 2435ed2dde1da43da96333441b5918c3,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5343855592314196063, guid: 2435ed2dde1da43da96333441b5918c3,
-        type: 3}
-      propertyPath: CollisionModule.enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5343855592314196063, guid: 2435ed2dde1da43da96333441b5918c3,
-        type: 3}
-      propertyPath: CollisionModule.type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5343855592314196063, guid: 2435ed2dde1da43da96333441b5918c3,
-        type: 3}
-      propertyPath: CollisionModule.collisionMessages
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6377426930940919722, guid: 2435ed2dde1da43da96333441b5918c3,
-        type: 3}
-      propertyPath: CollisionModule.enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6377426930940919722, guid: 2435ed2dde1da43da96333441b5918c3,
-        type: 3}
-      propertyPath: CollisionModule.type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6377426930940919722, guid: 2435ed2dde1da43da96333441b5918c3,
-        type: 3}
-      propertyPath: CollisionModule.collisionMessages
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2435ed2dde1da43da96333441b5918c3, type: 3}
